@@ -11,7 +11,7 @@ include 'top.php';
       $tieude = $r['tieude'];
       $trichdan = $r['trichdan'];
       $anhtrichdan = $r['anhtrichdan'];
-      echo "<a style='width:25%;' href='newsdetail.php?idn=$idn&id=$id'>$tieude</a>";
+      echo "<a href='newsdetail.php?idn=$idn&id=$id'>$tieude</a>";
       echo "<img src='imgs/$anhtrichdan' style='width:100px;height:80px;'>";
       echo "</br>$trichdan<br>";
 

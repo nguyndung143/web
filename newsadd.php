@@ -1,6 +1,6 @@
 <?php 
 include 'top.php';
-$alterSql = "ALTER TABLE bangtin AUTO_INCREMENT = 1";
+$alterSql = "ALTER TABLE bangtin AUTO_INCREMENT = 0";
 $dt->command($alterSql);
 if(!isset($role) || $role != 2){
     header('location:index.php');

@@ -42,7 +42,7 @@ while($r = $dt->fetch()){
         <?php
         if (isset($_POST['add'])){
             if($dt->checknull($_POST['namegr']) ){
-                    $name= $_POST['namegr'];
+                    $name= addslashes($_POST['namegr']);
                     $dt->command("INSERT into nhomtin(tenNhom) value ('$name')");
                     header('location:groupadd.php');
             }

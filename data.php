@@ -18,7 +18,7 @@
             $this->connect();
             $this->result = $this->conn->query($sql);
         }
-        // kiểm tra dữ liệu
+        // Duyệt dữ liệu
         public function fetch(){
             if ($this->result->num_rows > 0) {
                $rows = $this->result->fetch_assoc();

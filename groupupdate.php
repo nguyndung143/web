@@ -9,7 +9,6 @@ if(!isset($role) || $role != 2){
 //     $r= $dt->fetch();
 // }
 ?>
-<h1>tin moi nhat</h1>
 <div class="noidung col col-md-9 card card-body">
     <form action="" method="post">
         ten nhom:<input type="text" size="70" name="tennhom" value="
@@ -18,8 +17,8 @@ if(!isset($role) || $role != 2){
             $id= $_GET['id'];
             $dt->select("SELECT * from nhomtin where idNhom='$id'");
             $r= $dt->fetch();
-        
-            echo $r['tenNhom']; }
+            echo $r['tenNhom'];
+        }
         ?>"/>
         <input type="submit" name="update" value="chap nhan">
     </form>
